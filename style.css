@@ -1,0 +1,479 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Cardo", serif;
+}
+:root{
+    --back-light:#FFFFFF;
+    --dark:#264454;
+
+}
+
+
+header{
+    height: 100vh;
+    background-image: url('./images/header.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+
+nav{
+    background-color: var(--back-light);
+    display: flex;
+    width: 80%;
+    float: right;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 20px;
+}
+
+nav .navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    color: black;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.logo p{
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    line-height: 1.5rem;
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--dark);
+}
+.logo span{
+    display: block;
+    letter-spacing:4px;
+    font-size: 1.3rem;
+}
+
+img{
+    width: 100%;
+}
+
+@media(max-width:900px){
+    nav{
+        width: 100%;
+    }
+}
+
+nav a:hover{
+    color:var(--dark) ;
+}
+
+.section-2{
+    margin: 5rem 0;
+}
+
+.sec-2-cards{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+}
+.sec-2-card{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1rem 0;
+}
+
+.sec-2-card img{
+    height: 400px;
+}
+
+
+.sec-2-card p{
+    margin-top: auto;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.sec-2-card h3{
+    font-size: 1.5rem;
+}
+
+
+@media(max-width:900px){
+    .sec-2-card{
+        text-align: center;
+    }
+}
+
+.section-3{
+    margin: 4rem 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+
+.section-3 p{
+    width: 40%;
+    margin: auto;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+@media(max-width:1000px){
+    .section-3 p{
+        width: 80%;
+    }
+}
+
+.section-3 h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.view-btn{
+    text-decoration: none;
+    padding: 0.6rem;
+    background-color: var(--dark);
+    width: 250px;
+    color: var(--back-light);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border: 2px solid var(--dark);
+    transition: 0.3s;
+}
+
+.section-3 .view-btn{
+    margin: auto ;
+}
+
+.view-btn:hover{
+    background-color:transparent;
+    color: var(--dark);
+}
+
+.section-4{
+    margin: 10rem 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.section-4 .text{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.section-4 a{
+    text-align: center;
+}
+
+.section-4 p{
+    line-height: 3rem;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+}
+.section-4 h2{
+    font-size: 4rem;
+}
+
+.section-4 .img{
+    max-width: 800px;
+}
+
+
+
+.section-5{
+    background-image: url('./images/back.jpg');
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-5 .text{
+    background: rgb(91,126,110);
+    background: linear-gradient(90deg, rgba(91,126,110,0.835171568627451) 100%, rgba(1,0,6,0) 100%);
+    width: 55%;
+    margin: auto;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 4rem;
+    padding:8rem;
+    color: var(--back-light);
+}
+
+
+@media(max-width:1200px){
+    .section-4 .text{
+       max-width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+    .section-4 h2{
+        font-size: 2rem;
+    }
+
+    .section-5 .text{
+        width: 90%;
+        padding: 2rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+}
+
+.section-6{
+
+    margin: 5rem 0;
+}
+
+.section-6 .form{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.section-6 h2{
+    font-size: 4rem;
+    color: var(--dark);
+    max-width: 600px;
+}
+
+.section-6 form{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section-6 .form-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section-6 input{
+    padding: 0.8rem;
+    min-width: 500px;
+}
+
+.sec-6-bottom-pic {
+    min-height: 600px;
+    width: 100%;
+    background-image: url('./images/photo_2024-06-04_16-59-07.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+select{
+    width: 350px;
+    float: right;
+    padding: 0.8rem;
+}
+.selection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.section-6 .view-btn{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+.section-6 textarea{
+    width: 350px;
+    height: 250px;
+}
+
+@media(max-width:1200px){
+    .section-4 .text{
+       max-width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+    .section-6 h2{
+        text-align: center;
+    }
+
+    .section-6 form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-6 textarea{
+        width: 500px;
+    }
+
+}
+
+.section-7{
+    margin: 10rem 0;
+}
+
+.sec-7-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0;
+    width: 60%;
+    margin: auto;
+
+}
+
+.grid-item-img {
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+
+
+.sec-7-1{
+    background-image: url('./images/images.jfif');
+}
+.sec-7-2{
+    background-image: url('./images/images\ \(1\).jfif');
+}
+.sec-7-3{
+    background-image: url('./images/images\ \(3\).jfif');
+}
+.sec-7-4{
+    background-image: url('./images/images\ \(2\).jfif');
+}
+.sec-7-5{
+    background-image: url('./images/366px-Van_Gogh_-_Terrasse_des_Cafes_an_der_Place_du_Forum_in_Arles_am_Abend1.webp');
+}
+.sec-7-6{
+    background-image: url('./images/download\ \(4\).jfif');
+}
+.sec-7-7{
+    background-image: url('./images/download.jfif');
+}
+.sec-7-8{
+    background-image: url('./images/download\ \(2\).jfif');
+}
+
+
+@media(max-width:1200px){
+    .sec-7-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 80%;
+    }
+}
+
+@media(max-width:700px){
+    .sec-7-grid{
+        display: grid;
+        grid-template-columns: auto;
+        width: 80%;
+        gap: 20px;
+    }
+}
+
+.section-7 h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 3rem 0;
+    color: var(--dark);
+}
+
+footer .background-pic{
+    background-image: url('./images/366px-Van_Gogh_-_Terrasse_des_Cafes_an_der_Place_du_Forum_in_Arles_am_Abend1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 800px;
+    transform: skewX(20deg);
+    right: -200px;
+    position: absolute;
+    z-index: -1;
+}
+
+footer {
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    padding: 3rem;
+}
+.footer-box{
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 2rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--dark);
+}
+li{
+    list-style: none;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.foot-card-1{
+    margin-right: 3rem;
+}
+footer h3{
+    padding: 2rem 0;
+}
+footer .foot-card-1{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 20px;
+    line-height: 2rem;
+}
+
+.copyright{
+    padding: 3rem;
+    display: block;
+    margin-top: 3rem;
+}
+
+@media(max-width:1000px) {
+    footer a{
+        color: var(--back-light);
+    }
+
+    footer{
+        color: var(--back-light);
+
+    }
+}
